@@ -5,6 +5,7 @@
 * 09/23/24 - Created by ChatGPT
 * 09/23/24 - Modified by jhui
 * 11/07/24 - Modified by jhui
+* 12/03/24 - Modified by Mohit Kumar
 */
 
 #ifndef HASH_NODE
@@ -23,14 +24,31 @@ private:
     Node* cacheNode;
 
 public:
-     HashNode(int value);
-    
+
+    //  HashNode Constructor
+    HashNode(int value);
+
+
+    /*  HashNode Constructor (Overloaded)
+
+    Initializes a HashNode with the given key value and a pointer to an associated
+    cache node. This constructor is helps with directly linking the HashNode to a 
+    corresponding Node in the cache.
+
+    Parameters:
+      - value (int): Key value for the HashNode.
+      - newCacheNode (Node*): Pointer to the associated cache node.
+    */
     HashNode(int value, Node* newCacheNode);
-    
-    //new method
+
+
+    /*  getCachePointer
+
+    Retrieves the pointer to the associated cache node stored in this HashNode.
+
+    */
     Node* getCachePointer();
-    
-};
+
 
 
 
