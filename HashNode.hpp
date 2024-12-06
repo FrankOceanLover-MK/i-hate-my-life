@@ -49,7 +49,7 @@ public:
     */
     Node* getCachePointer();
 
-
+};
 
 
 #endif // HASH_NODE
