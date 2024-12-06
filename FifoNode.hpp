@@ -5,6 +5,7 @@
 * 09/23/24 - Created by ChatGPT
 * 09/23/24 - Modified by jhui
 * 11/07/24 - Modified by jhui
+* 12/04/24 - Modified by Mohit Kumar
 */
 
 #ifndef FIFO_NODE
@@ -41,9 +42,13 @@ private:
 	Data* dataValues;
 
 public:
+
+    // Constructor: Initializes a FifoNode with a given integer key value.
     FifoNode(int value);
     
-    //new helper method
+    /* Constructor for Helper Method: Initializes a FifoNode with a given integer key value
+       and assigns the provided Data object (newData) to the node. This is useful for 
+      directly creating nodes with both key and associated data */
     FifoNode(int value, Data* newData);
     
 };
