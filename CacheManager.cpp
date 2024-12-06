@@ -3,6 +3,7 @@
 #include "HashTable.hpp"
 #include <iostream>
 #include <stdexcept>
+#include "HashNode.hpp"
 
 CacheManager::CacheManager(size_t capacity) : _maxSize(capacity), _curSize(0) {
     _fifoCache = new DoublyLinkedList();

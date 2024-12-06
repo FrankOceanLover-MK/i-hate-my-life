@@ -7,4 +7,3 @@ HashNode::HashNode(int value) : Node(value), cacheNode(nullptr) {
 HashNode::HashNode(int value, Node* newCacheNode) : Node(value), cacheNode(newCacheNode) {
     // Initialization of HashNode
 }
-
