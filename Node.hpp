@@ -17,12 +17,16 @@
 * collision resolution, as well a Linked List used in the FIFO cache.
 */
 struct Node {
-	int key;
+    int key;           // Key value associated with the node
+    Node* prev;        // Pointer to the previous node in the list
+    Node* next;        // Pointer to the next node in the list
 
-	Node* prev;
-	Node* next;
 
+        //  Node Constructor
 	Node(int keyValue);
+
+	
+        //  Node Destructor
 	virtual ~Node();
 };
 
