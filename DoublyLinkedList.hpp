@@ -5,6 +5,7 @@
 * 09/23/24 - Created by ChatGPT
 * 09/23/24 - Modified by jhui
 * 11/07/24 - Modified by jhui
+* 12/04/24 - Modified by Mohit Kumar
 */
 
 #ifndef _DOUBLY_LINKED_LIST
@@ -54,9 +55,11 @@ public:
 	// deleteList
 	void deleteList();
 
+	// getHead
 	Node* getHead();
-    
-    Node* getTail();
+
+    	// getTail
+   	Node* getTail();
 
 }; // end DoublyLinkedList
 #endif	// _DOUBLY_LINKED_LIST
